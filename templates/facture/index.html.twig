@@ -1,15 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-    <img src="https://qweeby.com/wp-content/uploads/2018/06/Qweeby_E-Facteur-de-performance-820x340.png" alt="Qweeby"/><br>
-    <h1>Factures</h1>{% endblock %}
 
 {% block body %}
 <table class="table">
     <thead>
     <tr>
 
-        <th>id</th>
+        <th>Id facture</th>
         <th>Numéro facture</th>
         <th>Emetteur</th>
         <th>Récepteur</th>
@@ -23,8 +20,8 @@
     <tbody>
     {% if(factures) %}
         {% for facture in factures %}
-            <tr>
-            <td>{{ facture.id }}</td>
+        <tr>
+            <td>{{ facture.id_facture }}</td>
             <td>{{ facture.numerofacture }}</td>
             <td>{{ facture.idemetteur }}</td>
             <td>{{ facture.idrecepteur }}</td>
@@ -32,8 +29,39 @@
             <td>{{ facture.montantht }}</td>
             <td>{{ facture.datefacture | date('Y-m-d')}}</td>
             <td>{{ facture.dateinpi | date('Y-m-d')}}</td>
-            <td>{{ facture.alerte }}</td>
-            </tr>
+{#            <td class="colour_{{facture.alerte}}"> {{ facture.alerte }}</td>#}
+
+            <td>
+                <div>
+                        {% if facture.alerte == 0 %}
+
+                    <div data-tooltip="bonne santé financière" class="colour_0">
+
+                    </div>
+
+
+                {% elseif facture.alerte == 1 %}
+                    <div data-tooltip="a connu quelques difficultés" class="colour_1">
+
+                    </div>
+                {% elseif facture.alerte == 2 %}
+                    <div data-tooltip="en difficulté" class="colour_2">
+
+                    </div>
+                {% elseif facture.alerte == 3 %}
+                    <div data-tooltip="en liquidation" class="colour_3">
+
+                    </div>
+
+                        {% endif %}>
+
+                </div>
+            </td>
+
+
+        </tr>
+
+
         {% endfor %}
     {% endif %}
     </tbody>

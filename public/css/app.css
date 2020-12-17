@@ -1,12 +1,26 @@
-img{
-    size: 40px;
-    align-content: center;
-}
 
-title{
+
+h1{
     text-align: center;
-    font-size: 16em;
+    font-size: 60px;
 }
-.table{
+table{
+    align-content: center;
     margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.couleurverte{
+    color: green;
+    border-radius: 30px;
+}
+.couleurjaune{
+    color: yellow;
+}
+.couleurorange{
+    color: orange;
+}
+.couleurrouge{
+    color: red;
 }

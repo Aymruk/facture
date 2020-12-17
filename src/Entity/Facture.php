@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\FactureRepository;
+use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -15,7 +16,7 @@ class Facture
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private $id_facture;
 
     /**
      * @ORM\Column(type="integer")
@@ -57,9 +58,9 @@ class Facture
      */
     private $alerte;
 
-    public function getId(): ?int
+    public function getId_facture(): ?int
     {
-        return $this->id;
+        return $this->id_facture;
     }
 
     public function getNumeroFacture(): ?int
@@ -122,12 +123,12 @@ class Facture
         return $this;
     }
 
-    public function getDateFacture(): ?\DateTimeInterface
+    public function getDateFacture(): ?DateTimeInterface
     {
         return $this->datefacture;
     }
 
-    public function setDateFacture(\DateTimeInterface $datefacture): self
+    public function setDateFacture(DateTimeInterface $datefacture): self
     {
         $this->datefacture = $datefacture;
 
