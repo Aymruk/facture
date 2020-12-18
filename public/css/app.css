@@ -1,26 +1,84 @@
-
-
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
 h1{
     text-align: center;
     font-size: 60px;
+    color: orangered;
 }
+
+
+
+
+
+
 table{
-    align-content: center;
-    margin: 20px;
-    padding: 20px;
-    font-size: 30px;
+    table-layout: fixed;
+    width: 40px;
+    border-collapse: collapse;
+    border: 3px solid;
     text-align: center;
+    margin: 40px;
+    padding: 40px;
+    font-size: 20px;
+
 }
-.couleurverte{
+table tr:nth-child(odd){
+    background-color:lightslategrey;
+    color: white;
+}
+th{
+    width: 30%;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: orangered;
+    color: white;
+}
+td{
+    padding: 20px;
+    border: 1px solid black;
+}
+.colour_0{
+    background-color: green;
+    position: center;
     color: green;
-    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
 }
-.couleurjaune{
+
+.colour_1{
+    background-color: yellow;
     color: yellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
 }
-.couleurorange{
+.colour_2{
+    background-color: orange;
     color: orange;
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
 }
-.couleurrouge{
+.colour_3{
+    background-color: red;
     color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
+}
+[data-tooltip]:before {
+    color: black;
+    position : absolute;
+    content : attr(data-tooltip);
+    opacity : 0;
+}
+[data-tooltip]:hover:before {
+    opacity : 1;
+}
+[data-tooltip]:not([data-tooltip-persistent]):before {
+    pointer-events: none;
 }

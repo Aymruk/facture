@@ -42,19 +42,19 @@
                     color: orangered;
                 }
 
-
-
-
-
+                footer{
+                    text-align: center;
+                    color: orangered;
+                    font-size: 20px;
+                }
 
                 table{
                     table-layout: fixed;
-                    width: 40px;
+                    width: 30px;
                     border-collapse: collapse;
                     border: 3px solid;
                     text-align: center;
-                    margin: 40px;
-                    padding: 40px;
+                    margin: 20px;
                     font-size: 20px;
 
                 }
@@ -63,23 +63,22 @@
                     color: white;
                 }
                 th{
-                    width: 30%;
-                    padding: 20px;
                     border: 1px solid black;
                     background-color: orangered;
                     color: white;
                 }
                 td{
-                    padding: 20px;
                     border: 1px solid black;
                 }
                 .colour_0{
                     background-color: green;
-                    position: center;
+                    text-align: center;
                     color: green;
                     width: 40px;
                     height: 40px;
                     border-radius: 120px;
+
+                    margin-left: 80px;
                 }
 
                 .colour_1{
@@ -88,6 +87,7 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 120px;
+                    margin-left: 80px;
                 }
                 .colour_2{
                     background-color: orange;
@@ -95,6 +95,7 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 120px;
+                    margin-left: 80px;
                 }
                 .colour_3{
                     background-color: red;
@@ -102,7 +103,9 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 120px;
+                    margin-left: 80px;
                 }
+
                 [data-tooltip]:before {
                     color: black;
                     position : absolute;
@@ -123,9 +126,9 @@
     <body>
     <header class="header">
         {% block title %}
-            <div style="text-align: center;">
+            <div class="logo" style="text-align: center;">
             <img class="qweeby" src="https://qweeby.com/wp-content/uploads/2018/06/Qweeby_E-Facteur-de-performance-820x340.png"
-                 alt="Qweeby" sizes="10px"/>
+                 alt="Qweeby" />
             </div><br>
             <h1>Factures</h1>
         {% endblock %}
