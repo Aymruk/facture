@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e406aa0-19ec-4fbd-ba85-6e45d68c9d57" name="Default Changelist" comment="affichage couleur">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2e406aa0-19ec-4fbd-ba85-6e45d68c9d57" name="Default Changelist" comment="- &gt; centrage couleur">
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/facture/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facture/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +172,7 @@
       <workItem from="1607524108476" duration="2772000" />
       <workItem from="1607607242525" duration="21198000" />
       <workItem from="1607957853248" duration="14182000" />
-      <workItem from="1608216722996" duration="9539000" />
+      <workItem from="1608216722996" duration="9824000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1607685966488</created>
@@ -198,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608226000032</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- &gt; centrage couleur">
+      <created>1608300844099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608300844099</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +225,7 @@
     <MESSAGE value="base" />
     <MESSAGE value="entity? controller?" />
     <MESSAGE value="affichage couleur" />
-    <option name="LAST_COMMIT_MESSAGE" value="affichage couleur" />
+    <MESSAGE value="- &gt; centrage couleur" />
+    <option name="LAST_COMMIT_MESSAGE" value="- &gt; centrage couleur" />
   </component>
 </project>
